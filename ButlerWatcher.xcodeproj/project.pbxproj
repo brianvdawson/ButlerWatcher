@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D30EAF801BC26A7800CB8061 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30EAF7F1BC26A7800CB8061 /* AppDelegate.swift */; };
+		D30EAF821BC26A7800CB8061 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30EAF811BC26A7800CB8061 /* ViewController.swift */; };
+		D30EAF851BC26A7800CB8061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30EAF831BC26A7800CB8061 /* Main.storyboard */; };
+		D30EAF871BC26A7800CB8061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D30EAF861BC26A7800CB8061 /* Assets.xcassets */; };
+		D30EAF8A1BC26A7800CB8061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30EAF881BC26A7800CB8061 /* LaunchScreen.storyboard */; };
+		D30EAF951BC26A7800CB8061 /* ButlerWatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30EAF941BC26A7800CB8061 /* ButlerWatcherTests.swift */; };
+		D30EAFA01BC26A7900CB8061 /* ButlerWatcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30EAF9F1BC26A7900CB8061 /* ButlerWatcherUITests.swift */; };
+		D30EAFA51BC26A7900CB8061 /* ButlerWatcher WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D30EAFA41BC26A7900CB8061 /* ButlerWatcher WatchKit App.app */; };
+		D30EAFAB1BC26A7900CB8061 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30EAFA91BC26A7900CB8061 /* Interface.storyboard */; };
+		D30EAFAD1BC26A7900CB8061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D30EAFAC1BC26A7900CB8061 /* Assets.xcassets */; };
+		D30EAFB41BC26A7900CB8061 /* ButlerWatcher WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D30EAFB31BC26A7900CB8061 /* ButlerWatcher WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D30EAFBB1BC26A7900CB8061 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30EAFBA1BC26A7900CB8061 /* InterfaceController.swift */; };
+		D30EAFBD1BC26A7900CB8061 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30EAFBC1BC26A7900CB8061 /* ExtensionDelegate.swift */; };
+		D30EAFBF1BC26A7900CB8061 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30EAFBE1BC26A7900CB8061 /* NotificationController.swift */; };
+		D30EAFC11BC26A7900CB8061 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30EAFC01BC26A7900CB8061 /* GlanceController.swift */; };
+		D30EAFC31BC26A7900CB8061 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30EAFC21BC26A7900CB8061 /* ComplicationController.swift */; };
+		D30EAFC51BC26A7900CB8061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D30EAFC41BC26A7900CB8061 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D30EAF911BC26A7800CB8061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30EAF741BC26A7800CB8061 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D30EAF7B1BC26A7800CB8061;
+			remoteInfo = ButlerWatcher;
+		};
+		D30EAF9C1BC26A7900CB8061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30EAF741BC26A7800CB8061 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D30EAF7B1BC26A7800CB8061;
+			remoteInfo = ButlerWatcher;
+		};
+		D30EAFA61BC26A7900CB8061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30EAF741BC26A7800CB8061 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D30EAFA31BC26A7900CB8061;
+			remoteInfo = "ButlerWatcher WatchKit App";
+		};
+		D30EAFB51BC26A7900CB8061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30EAF741BC26A7800CB8061 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D30EAFB21BC26A7900CB8061;
+			remoteInfo = "ButlerWatcher WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D30EAFCC1BC26A7900CB8061 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D30EAFB41BC26A7900CB8061 /* ButlerWatcher WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30EAFD01BC26A7900CB8061 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D30EAFA51BC26A7900CB8061 /* ButlerWatcher WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D30EAF7C1BC26A7800CB8061 /* ButlerWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButlerWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30EAF7F1BC26A7800CB8061 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D30EAF811BC26A7800CB8061 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D30EAF841BC26A7800CB8061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D30EAF861BC26A7800CB8061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D30EAF891BC26A7800CB8061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D30EAF8B1BC26A7800CB8061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D30EAF901BC26A7800CB8061 /* ButlerWatcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButlerWatcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30EAF941BC26A7800CB8061 /* ButlerWatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButlerWatcherTests.swift; sourceTree = "<group>"; };
+		D30EAF961BC26A7900CB8061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D30EAF9B1BC26A7900CB8061 /* ButlerWatcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButlerWatcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30EAF9F1BC26A7900CB8061 /* ButlerWatcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButlerWatcherUITests.swift; sourceTree = "<group>"; };
+		D30EAFA11BC26A7900CB8061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D30EAFA41BC26A7900CB8061 /* ButlerWatcher WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ButlerWatcher WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30EAFAA1BC26A7900CB8061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D30EAFAC1BC26A7900CB8061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D30EAFAE1BC26A7900CB8061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D30EAFB31BC26A7900CB8061 /* ButlerWatcher WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ButlerWatcher WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30EAFB91BC26A7900CB8061 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D30EAFBA1BC26A7900CB8061 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D30EAFBC1BC26A7900CB8061 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D30EAFBE1BC26A7900CB8061 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D30EAFC01BC26A7900CB8061 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		D30EAFC21BC26A7900CB8061 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		D30EAFC41BC26A7900CB8061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D30EAFC61BC26A7900CB8061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D30EAF791BC26A7800CB8061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30EAF8D1BC26A7800CB8061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30EAF981BC26A7900CB8061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30EAFB01BC26A7900CB8061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D30EAF731BC26A7800CB8061 = {
+			isa = PBXGroup;
+			children = (
+				D30EAF7E1BC26A7800CB8061 /* ButlerWatcher */,
+				D30EAF931BC26A7800CB8061 /* ButlerWatcherTests */,
+				D30EAF9E1BC26A7900CB8061 /* ButlerWatcherUITests */,
+				D30EAFA81BC26A7900CB8061 /* ButlerWatcher WatchKit App */,
+				D30EAFB71BC26A7900CB8061 /* ButlerWatcher WatchKit Extension */,
+				D30EAF7D1BC26A7800CB8061 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D30EAF7D1BC26A7800CB8061 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D30EAF7C1BC26A7800CB8061 /* ButlerWatcher.app */,
+				D30EAF901BC26A7800CB8061 /* ButlerWatcherTests.xctest */,
+				D30EAF9B1BC26A7900CB8061 /* ButlerWatcherUITests.xctest */,
+				D30EAFA41BC26A7900CB8061 /* ButlerWatcher WatchKit App.app */,
+				D30EAFB31BC26A7900CB8061 /* ButlerWatcher WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D30EAF7E1BC26A7800CB8061 /* ButlerWatcher */ = {
+			isa = PBXGroup;
+			children = (
+				D30EAF7F1BC26A7800CB8061 /* AppDelegate.swift */,
+				D30EAF811BC26A7800CB8061 /* ViewController.swift */,
+				D30EAF831BC26A7800CB8061 /* Main.storyboard */,
+				D30EAF861BC26A7800CB8061 /* Assets.xcassets */,
+				D30EAF881BC26A7800CB8061 /* LaunchScreen.storyboard */,
+				D30EAF8B1BC26A7800CB8061 /* Info.plist */,
+			);
+			path = ButlerWatcher;
+			sourceTree = "<group>";
+		};
+		D30EAF931BC26A7800CB8061 /* ButlerWatcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				D30EAF941BC26A7800CB8061 /* ButlerWatcherTests.swift */,
+				D30EAF961BC26A7900CB8061 /* Info.plist */,
+			);
+			path = ButlerWatcherTests;
+			sourceTree = "<group>";
+		};
+		D30EAF9E1BC26A7900CB8061 /* ButlerWatcherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D30EAF9F1BC26A7900CB8061 /* ButlerWatcherUITests.swift */,
+				D30EAFA11BC26A7900CB8061 /* Info.plist */,
+			);
+			path = ButlerWatcherUITests;
+			sourceTree = "<group>";
+		};
+		D30EAFA81BC26A7900CB8061 /* ButlerWatcher WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D30EAFA91BC26A7900CB8061 /* Interface.storyboard */,
+				D30EAFAC1BC26A7900CB8061 /* Assets.xcassets */,
+				D30EAFAE1BC26A7900CB8061 /* Info.plist */,
+			);
+			path = "ButlerWatcher WatchKit App";
+			sourceTree = "<group>";
+		};
+		D30EAFB71BC26A7900CB8061 /* ButlerWatcher WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D30EAFBA1BC26A7900CB8061 /* InterfaceController.swift */,
+				D30EAFBC1BC26A7900CB8061 /* ExtensionDelegate.swift */,
+				D30EAFBE1BC26A7900CB8061 /* NotificationController.swift */,
+				D30EAFC01BC26A7900CB8061 /* GlanceController.swift */,
+				D30EAFC21BC26A7900CB8061 /* ComplicationController.swift */,
+				D30EAFC41BC26A7900CB8061 /* Assets.xcassets */,
+				D30EAFC61BC26A7900CB8061 /* Info.plist */,
+				D30EAFB81BC26A7900CB8061 /* Supporting Files */,
+			);
+			path = "ButlerWatcher WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D30EAFB81BC26A7900CB8061 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D30EAFB91BC26A7900CB8061 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D30EAF7B1BC26A7800CB8061 /* ButlerWatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D30EAFD11BC26A7900CB8061 /* Build configuration list for PBXNativeTarget "ButlerWatcher" */;
+			buildPhases = (
+				D30EAF781BC26A7800CB8061 /* Sources */,
+				D30EAF791BC26A7800CB8061 /* Frameworks */,
+				D30EAF7A1BC26A7800CB8061 /* Resources */,
+				D30EAFD01BC26A7900CB8061 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D30EAFA71BC26A7900CB8061 /* PBXTargetDependency */,
+			);
+			name = ButlerWatcher;
+			productName = ButlerWatcher;
+			productReference = D30EAF7C1BC26A7800CB8061 /* ButlerWatcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D30EAF8F1BC26A7800CB8061 /* ButlerWatcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D30EAFD41BC26A7900CB8061 /* Build configuration list for PBXNativeTarget "ButlerWatcherTests" */;
+			buildPhases = (
+				D30EAF8C1BC26A7800CB8061 /* Sources */,
+				D30EAF8D1BC26A7800CB8061 /* Frameworks */,
+				D30EAF8E1BC26A7800CB8061 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D30EAF921BC26A7800CB8061 /* PBXTargetDependency */,
+			);
+			name = ButlerWatcherTests;
+			productName = ButlerWatcherTests;
+			productReference = D30EAF901BC26A7800CB8061 /* ButlerWatcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D30EAF9A1BC26A7900CB8061 /* ButlerWatcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D30EAFD71BC26A7900CB8061 /* Build configuration list for PBXNativeTarget "ButlerWatcherUITests" */;
+			buildPhases = (
+				D30EAF971BC26A7900CB8061 /* Sources */,
+				D30EAF981BC26A7900CB8061 /* Frameworks */,
+				D30EAF991BC26A7900CB8061 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D30EAF9D1BC26A7900CB8061 /* PBXTargetDependency */,
+			);
+			name = ButlerWatcherUITests;
+			productName = ButlerWatcherUITests;
+			productReference = D30EAF9B1BC26A7900CB8061 /* ButlerWatcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D30EAFA31BC26A7900CB8061 /* ButlerWatcher WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D30EAFCD1BC26A7900CB8061 /* Build configuration list for PBXNativeTarget "ButlerWatcher WatchKit App" */;
+			buildPhases = (
+				D30EAFA21BC26A7900CB8061 /* Resources */,
+				D30EAFCC1BC26A7900CB8061 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D30EAFB61BC26A7900CB8061 /* PBXTargetDependency */,
+			);
+			name = "ButlerWatcher WatchKit App";
+			productName = "ButlerWatcher WatchKit App";
+			productReference = D30EAFA41BC26A7900CB8061 /* ButlerWatcher WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D30EAFB21BC26A7900CB8061 /* ButlerWatcher WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D30EAFC91BC26A7900CB8061 /* Build configuration list for PBXNativeTarget "ButlerWatcher WatchKit Extension" */;
+			buildPhases = (
+				D30EAFAF1BC26A7900CB8061 /* Sources */,
+				D30EAFB01BC26A7900CB8061 /* Frameworks */,
+				D30EAFB11BC26A7900CB8061 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ButlerWatcher WatchKit Extension";
+			productName = "ButlerWatcher WatchKit Extension";
+			productReference = D30EAFB31BC26A7900CB8061 /* ButlerWatcher WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D30EAF741BC26A7800CB8061 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Cloudbees;
+				TargetAttributes = {
+					D30EAF7B1BC26A7800CB8061 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					D30EAF8F1BC26A7800CB8061 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = D30EAF7B1BC26A7800CB8061;
+					};
+					D30EAF9A1BC26A7900CB8061 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = D30EAF7B1BC26A7800CB8061;
+					};
+					D30EAFA31BC26A7900CB8061 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					D30EAFB21BC26A7900CB8061 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = D30EAF771BC26A7800CB8061 /* Build configuration list for PBXProject "ButlerWatcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D30EAF731BC26A7800CB8061;
+			productRefGroup = D30EAF7D1BC26A7800CB8061 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D30EAF7B1BC26A7800CB8061 /* ButlerWatcher */,
+				D30EAF8F1BC26A7800CB8061 /* ButlerWatcherTests */,
+				D30EAF9A1BC26A7900CB8061 /* ButlerWatcherUITests */,
+				D30EAFA31BC26A7900CB8061 /* ButlerWatcher WatchKit App */,
+				D30EAFB21BC26A7900CB8061 /* ButlerWatcher WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D30EAF7A1BC26A7800CB8061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30EAF8A1BC26A7800CB8061 /* LaunchScreen.storyboard in Resources */,
+				D30EAF871BC26A7800CB8061 /* Assets.xcassets in Resources */,
+				D30EAF851BC26A7800CB8061 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30EAF8E1BC26A7800CB8061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30EAF991BC26A7900CB8061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30EAFA21BC26A7900CB8061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30EAFAD1BC26A7900CB8061 /* Assets.xcassets in Resources */,
+				D30EAFAB1BC26A7900CB8061 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30EAFB11BC26A7900CB8061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30EAFC51BC26A7900CB8061 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D30EAF781BC26A7800CB8061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30EAF821BC26A7800CB8061 /* ViewController.swift in Sources */,
+				D30EAF801BC26A7800CB8061 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30EAF8C1BC26A7800CB8061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30EAF951BC26A7800CB8061 /* ButlerWatcherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30EAF971BC26A7900CB8061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30EAFA01BC26A7900CB8061 /* ButlerWatcherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30EAFAF1BC26A7900CB8061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30EAFBF1BC26A7900CB8061 /* NotificationController.swift in Sources */,
+				D30EAFBD1BC26A7900CB8061 /* ExtensionDelegate.swift in Sources */,
+				D30EAFC31BC26A7900CB8061 /* ComplicationController.swift in Sources */,
+				D30EAFBB1BC26A7900CB8061 /* InterfaceController.swift in Sources */,
+				D30EAFC11BC26A7900CB8061 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D30EAF921BC26A7800CB8061 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D30EAF7B1BC26A7800CB8061 /* ButlerWatcher */;
+			targetProxy = D30EAF911BC26A7800CB8061 /* PBXContainerItemProxy */;
+		};
+		D30EAF9D1BC26A7900CB8061 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D30EAF7B1BC26A7800CB8061 /* ButlerWatcher */;
+			targetProxy = D30EAF9C1BC26A7900CB8061 /* PBXContainerItemProxy */;
+		};
+		D30EAFA71BC26A7900CB8061 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D30EAFA31BC26A7900CB8061 /* ButlerWatcher WatchKit App */;
+			targetProxy = D30EAFA61BC26A7900CB8061 /* PBXContainerItemProxy */;
+		};
+		D30EAFB61BC26A7900CB8061 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D30EAFB21BC26A7900CB8061 /* ButlerWatcher WatchKit Extension */;
+			targetProxy = D30EAFB51BC26A7900CB8061 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D30EAF831BC26A7800CB8061 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D30EAF841BC26A7800CB8061 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D30EAF881BC26A7800CB8061 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D30EAF891BC26A7800CB8061 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D30EAFA91BC26A7900CB8061 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D30EAFAA1BC26A7900CB8061 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D30EAFC71BC26A7900CB8061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D30EAFC81BC26A7900CB8061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D30EAFCA1BC26A7900CB8061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "ButlerWatcher WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudbees.ButlerWatcher.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		D30EAFCB1BC26A7900CB8061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "ButlerWatcher WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudbees.ButlerWatcher.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		D30EAFCE1BC26A7900CB8061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ButlerWatcher_WatchKit_Extension;
+				INFOPLIST_FILE = "ButlerWatcher WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudbees.ButlerWatcher.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		D30EAFCF1BC26A7900CB8061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ButlerWatcher_WatchKit_Extension;
+				INFOPLIST_FILE = "ButlerWatcher WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudbees.ButlerWatcher.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		D30EAFD21BC26A7900CB8061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ButlerWatcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudbees.ButlerWatcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D30EAFD31BC26A7900CB8061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ButlerWatcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudbees.ButlerWatcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D30EAFD51BC26A7900CB8061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ButlerWatcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudbees.ButlerWatcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButlerWatcher.app/ButlerWatcher";
+			};
+			name = Debug;
+		};
+		D30EAFD61BC26A7900CB8061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ButlerWatcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudbees.ButlerWatcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButlerWatcher.app/ButlerWatcher";
+			};
+			name = Release;
+		};
+		D30EAFD81BC26A7900CB8061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ButlerWatcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudbees.ButlerWatcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ButlerWatcher;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D30EAFD91BC26A7900CB8061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ButlerWatcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Cloudbees.ButlerWatcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ButlerWatcher;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D30EAF771BC26A7800CB8061 /* Build configuration list for PBXProject "ButlerWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30EAFC71BC26A7900CB8061 /* Debug */,
+				D30EAFC81BC26A7900CB8061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D30EAFC91BC26A7900CB8061 /* Build configuration list for PBXNativeTarget "ButlerWatcher WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30EAFCA1BC26A7900CB8061 /* Debug */,
+				D30EAFCB1BC26A7900CB8061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D30EAFCD1BC26A7900CB8061 /* Build configuration list for PBXNativeTarget "ButlerWatcher WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30EAFCE1BC26A7900CB8061 /* Debug */,
+				D30EAFCF1BC26A7900CB8061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D30EAFD11BC26A7900CB8061 /* Build configuration list for PBXNativeTarget "ButlerWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30EAFD21BC26A7900CB8061 /* Debug */,
+				D30EAFD31BC26A7900CB8061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D30EAFD41BC26A7900CB8061 /* Build configuration list for PBXNativeTarget "ButlerWatcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30EAFD51BC26A7900CB8061 /* Debug */,
+				D30EAFD61BC26A7900CB8061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D30EAFD71BC26A7900CB8061 /* Build configuration list for PBXNativeTarget "ButlerWatcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30EAFD81BC26A7900CB8061 /* Debug */,
+				D30EAFD91BC26A7900CB8061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D30EAF741BC26A7800CB8061 /* Project object */;
+}
