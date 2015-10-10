@@ -1,0 +1,14 @@
+Application: ButlerWatcher
+Author: Brian Dawson @brianvdawson
+Date: 10/10/2015
+
+Summary:
+Butler Watcher is an Apple WatchOS 2 application which allows for monitering and notifications of status of Jobs in Jenkins
+
+
+Detailed Description:
+Butler Watcher contains the following capablities
+ - Check Jenkins job status as a Glance view
+ - Recieve notification on non-successful Jenkins job run
+ - View status of specific Jenkins job as a complication
+ - Restart or rerun the Job
