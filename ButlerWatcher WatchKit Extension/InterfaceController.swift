@@ -11,13 +11,28 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
+    @IBOutlet var picker: WKInterfacePicker!
+    @IBOutlet var slider: WKInterfaceSlider!
+    
+    @IBOutlet var button: WKInterfaceButton!
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
+        var pickerItems: [WKPickerItem] = []
+        for i in 1...10 {
+            let item = WKPickerItem()
+            item.title = "Picker item \(i)"
+            pickerItems.append(item)
+        }
+        self.picker.setItems(pickerItems)
     }
 
+    @IBAction func showAlertPressed() {
+    
+    }
+    
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()

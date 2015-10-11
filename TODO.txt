@@ -1,0 +1,35 @@
+ButlerWatcher Development ToDo
+
+Create the following functionly:
+- Check Jenkins job status as a Glance view
+- Recieve notification on non-successful Jenkins job run
+- View status of specific Jenkins job as a complication
+- Restart or rerun the Job
+
+
+Pre-Requisites
+- Create TDD units tests for target functionality
+- Create TDD functional test with Cucumber
+- Enable CI with Jenkins
+- Use ASCII doc as part of process for each feature implemented.
+
+
+
+Details:
+- Check Jenkins job status as a Glance view
+-- Create glance view
+-- Create screen to set the Jenkins URL and credentials
+-- Create screen to select Jenkins job and url
+-- Create query of jenkins status
+-- Create color-coded display of jenkins job status
+
+- Recieve notification on non-successful Jenkins job run
+-- Create notification view
+-- Create scheduled task to poll job status
+-- Generate notification
+
+- View status of specific Jenkins job as a complication
+-- Create 3rd-party complication
+-- Update complication with Job status
+
+- Enable support for multiple jobs based on previous single job support

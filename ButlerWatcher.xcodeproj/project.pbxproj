@@ -24,6 +24,10 @@
 		D30EAFC11BC26A7900CB8061 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30EAFC01BC26A7900CB8061 /* GlanceController.swift */; };
 		D30EAFC31BC26A7900CB8061 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30EAFC21BC26A7900CB8061 /* ComplicationController.swift */; };
 		D30EAFC51BC26A7900CB8061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D30EAFC41BC26A7900CB8061 /* Assets.xcassets */; };
+		D30EAFDC1BC26AD500CB8061 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30EAFDA1BC26AD500CB8061 /* WatchConnectivity.framework */; };
+		D30EAFDD1BC26AD500CB8061 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30EAFDB1BC26AD500CB8061 /* WatchKit.framework */; };
+		D3BA85681BC9B45300206A81 /* README.adoc in Resources */ = {isa = PBXBuildFile; fileRef = D3BA85671BC9B45300206A81 /* README.adoc */; settings = {ASSET_TAGS = (); }; };
+		D3BA856A1BC9B6A700206A81 /* TODO.txt in Resources */ = {isa = PBXBuildFile; fileRef = D3BA85691BC9B6A700206A81 /* TODO.txt */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +113,11 @@
 		D30EAFC21BC26A7900CB8061 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		D30EAFC41BC26A7900CB8061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D30EAFC61BC26A7900CB8061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D30EAFDA1BC26AD500CB8061 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		D30EAFDB1BC26AD500CB8061 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		D30EAFE01BC26B8A00CB8061 /* ButlerWatcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ButlerWatcher.entitlements; sourceTree = "<group>"; };
+		D3BA85671BC9B45300206A81 /* README.adoc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.adoc; sourceTree = "<group>"; };
+		D3BA85691BC9B6A700206A81 /* TODO.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +125,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30EAFDC1BC26AD500CB8061 /* WatchConnectivity.framework in Frameworks */,
+				D30EAFDD1BC26AD500CB8061 /* WatchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +157,10 @@
 		D30EAF731BC26A7800CB8061 = {
 			isa = PBXGroup;
 			children = (
+				D3BA85691BC9B6A700206A81 /* TODO.txt */,
+				D3BA85671BC9B45300206A81 /* README.adoc */,
+				D30EAFDA1BC26AD500CB8061 /* WatchConnectivity.framework */,
+				D30EAFDB1BC26AD500CB8061 /* WatchKit.framework */,
 				D30EAF7E1BC26A7800CB8061 /* ButlerWatcher */,
 				D30EAF931BC26A7800CB8061 /* ButlerWatcherTests */,
 				D30EAF9E1BC26A7900CB8061 /* ButlerWatcherUITests */,
@@ -170,6 +185,7 @@
 		D30EAF7E1BC26A7800CB8061 /* ButlerWatcher */ = {
 			isa = PBXGroup;
 			children = (
+				D30EAFE01BC26B8A00CB8061 /* ButlerWatcher.entitlements */,
 				D30EAF7F1BC26A7800CB8061 /* AppDelegate.swift */,
 				D30EAF811BC26A7800CB8061 /* ViewController.swift */,
 				D30EAF831BC26A7800CB8061 /* Main.storyboard */,
@@ -334,6 +350,12 @@
 				TargetAttributes = {
 					D30EAF7B1BC26A7800CB8061 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 2TUP433M28;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 					D30EAF8F1BC26A7800CB8061 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -378,6 +400,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3BA856A1BC9B6A700206A81 /* TODO.txt in Resources */,
+				D3BA85681BC9B45300206A81 /* README.adoc in Resources */,
 				D30EAF8A1BC26A7800CB8061 /* LaunchScreen.storyboard in Resources */,
 				D30EAF871BC26A7800CB8061 /* Assets.xcassets in Resources */,
 				D30EAF851BC26A7800CB8061 /* Main.storyboard in Resources */,
@@ -657,10 +681,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ButlerWatcher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Cloudbees.ButlerWatcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -668,10 +696,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ButlerWatcher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Cloudbees.ButlerWatcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -742,6 +774,7 @@
 				D30EAFCB1BC26A7900CB8061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D30EAFCD1BC26A7900CB8061 /* Build configuration list for PBXNativeTarget "ButlerWatcher WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -750,6 +783,7 @@
 				D30EAFCF1BC26A7900CB8061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D30EAFD11BC26A7900CB8061 /* Build configuration list for PBXNativeTarget "ButlerWatcher" */ = {
 			isa = XCConfigurationList;
@@ -758,6 +792,7 @@
 				D30EAFD31BC26A7900CB8061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D30EAFD41BC26A7900CB8061 /* Build configuration list for PBXNativeTarget "ButlerWatcherTests" */ = {
 			isa = XCConfigurationList;
@@ -766,6 +801,7 @@
 				D30EAFD61BC26A7900CB8061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D30EAFD71BC26A7900CB8061 /* Build configuration list for PBXNativeTarget "ButlerWatcherUITests" */ = {
 			isa = XCConfigurationList;
@@ -774,6 +810,7 @@
 				D30EAFD91BC26A7900CB8061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
