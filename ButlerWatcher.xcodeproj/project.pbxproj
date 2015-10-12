@@ -367,6 +367,7 @@
 					};
 					D30EAFA31BC26A7900CB8061 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 2TUP433M28;
 					};
 					D30EAFB21BC26A7900CB8061 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -621,7 +622,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				INFOPLIST_FILE = "ButlerWatcher WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Cloudbees.ButlerWatcher.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redeye.ButlerWatcher.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -636,7 +637,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				INFOPLIST_FILE = "ButlerWatcher WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Cloudbees.ButlerWatcher.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redeye.ButlerWatcher.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -649,10 +650,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = ButlerWatcher_WatchKit_Extension;
 				INFOPLIST_FILE = "ButlerWatcher WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = Cloudbees.ButlerWatcher.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redeye.ButlerWatcher.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -665,10 +667,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = ButlerWatcher_WatchKit_Extension;
 				INFOPLIST_FILE = "ButlerWatcher WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = Cloudbees.ButlerWatcher.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redeye.ButlerWatcher.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -682,12 +685,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos9.0]" = "";
 				INFOPLIST_FILE = ButlerWatcher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Cloudbees.ButlerWatcher;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redeye.ButlerWatcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = com.redeye;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -696,13 +699,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: brianvdawson@gmail.com (W79FG26Q89)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: brianvdawson@gmail.com (W79FG26Q89)";
 				INFOPLIST_FILE = ButlerWatcher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Cloudbees.ButlerWatcher;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redeye.ButlerWatcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = com.redeye;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -765,7 +769,7 @@
 				D30EAFC81BC26A7900CB8061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		D30EAFC91BC26A7900CB8061 /* Build configuration list for PBXNativeTarget "ButlerWatcher WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -774,7 +778,7 @@
 				D30EAFCB1BC26A7900CB8061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		D30EAFCD1BC26A7900CB8061 /* Build configuration list for PBXNativeTarget "ButlerWatcher WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -783,7 +787,7 @@
 				D30EAFCF1BC26A7900CB8061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		D30EAFD11BC26A7900CB8061 /* Build configuration list for PBXNativeTarget "ButlerWatcher" */ = {
 			isa = XCConfigurationList;
@@ -792,7 +796,7 @@
 				D30EAFD31BC26A7900CB8061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		D30EAFD41BC26A7900CB8061 /* Build configuration list for PBXNativeTarget "ButlerWatcherTests" */ = {
 			isa = XCConfigurationList;
@@ -801,7 +805,7 @@
 				D30EAFD61BC26A7900CB8061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		D30EAFD71BC26A7900CB8061 /* Build configuration list for PBXNativeTarget "ButlerWatcherUITests" */ = {
 			isa = XCConfigurationList;
@@ -810,7 +814,7 @@
 				D30EAFD91BC26A7900CB8061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
