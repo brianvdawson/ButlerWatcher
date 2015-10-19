@@ -48,9 +48,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
         
-        var hostUrl: NSURLRequest = NSURLRequest(URL:  NSURL(string: "http://localhost:8080"))
+        let hostUrl = NSURL(string: "http://localhost:8080")
+        var jobRequest = NSMutableURLRequest(URL: hostUrl!)
         
-        var jenkinsMasterSession : NSURLSessionDataTask = NSURLSessionDataTask
+        
         
     
         let okayAlertController:UIAlertController = UIAlertController(title: notification.alertAction, message: notification.alertBody, preferredStyle: .Alert)
