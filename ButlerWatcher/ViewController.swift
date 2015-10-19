@@ -27,9 +27,9 @@ class ViewController: UIViewController {
                 //notification.fireDate = NSDate(timeIntervalSinceNow: Double(60))
                 
                 //---- configure the alert stuff
-                notification.alertAction = "View Alert"
-                notification.alertBody = "Your 15 second alert has fired!"
-                notification.alertTitle = "Title"
+                notification.alertAction = "View Jiobs"
+                notification.alertBody = "Job's have synced"
+                notification.alertTitle = "Sync Complete"
                 
                 //---- modify the badge
                 notification.applicationIconBadgeNumber = 1;

@@ -48,10 +48,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
         
+        var hostUrl: NSURLRequest = NSURLRequest(URL:  NSURL(string: "http://localhost:8080"))
+        
+        var jenkinsMasterSession : NSURLSessionDataTask = NSURLSessionDataTask
+        
     
         let okayAlertController:UIAlertController = UIAlertController(title: notification.alertAction, message: notification.alertBody, preferredStyle: .Alert)
         
-        let alertAction: UIAlertAction = UIAlertAction(title: notification.alertAction, style: UIAlertActionStyle.Default, handler: { action in print("Click of cancel button" )
+        let alertAction: UIAlertAction = UIAlertAction(title: notification.alertAction, style: UIAlertActionStyle.Default, handler: { action in print("Job Sync Requested" )
         } )
         
         okayAlertController.addAction(alertAction)
