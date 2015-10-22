@@ -28,7 +28,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>Cloudbees.ButlerWatcher</string>
+	<string>com.redeye.ButlerWatcher</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>

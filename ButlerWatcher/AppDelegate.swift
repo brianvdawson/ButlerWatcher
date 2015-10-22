@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Foundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var jobList = [JenkinsJob]()
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -47,6 +49,58 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        
+        print("Recieved Local Notification")
+        var request = NSURLRequest(URL: NSURL(string: "http://localhost:8080/api/json?pretty=true")!)
+        var session = NSURLSession.sharedSession()
+
+
+        var task = session.dataTaskWithRequest(request){ ( data, response, error) in
+        
+            do{
+            if (error == nil){
+                print("Response: \(response)")
+                // var strData = NSString(data: data!, encoding: NSUTF8StringEncoding)
+                // print("Body: \(strData)")
+                var json: NSDictionary =  try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as! NSDictionary
+
+                print("Jobs:")
+                var jobs = json["jobs"] as? NSArray
+                for job  in jobs! {
+                    var  currentJob : JenkinsJob  = JenkinsJob(name: "")
+
+                    print(job)
+                    currentJob.name = job["name"] as! String
+
+                    print(job["color"])
+                    currentJob.status = job["color"] as! String
+
+                    print(job["url"])
+                    currentJob.url = job["url"] as! String
+
+                    currentJob.lastupdate = NSDate()
+
+                    if self.jobList.contains( currentJob){
+                        print("Job exists")
+                        var index = self.jobList.indexOf(currentJob)
+                        self.jobList[ index! ].lastupdate = NSDate()
+
+                    }else{
+                        print("New job found")
+                        self.jobList.append(currentJob)
+
+                    }
+                }
+            }else{
+                print( error )
+            }
+            }catch var serializationError as NSError{
+                print(serializationError)
+            }
+        
+        }
+
+        task.resume()
         
     
         let okayAlertController:UIAlertController = UIAlertController(title: notification.alertAction, message: notification.alertBody, preferredStyle: .Alert)

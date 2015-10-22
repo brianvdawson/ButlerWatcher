@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+
         
     }
 
@@ -39,6 +41,24 @@ class ViewController: UIViewController {
                 
                 //---- schedule it
                 UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        var jobButtons = [UIButton]()
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+
+        var offset = CGFloat(0)
+        appDelegate.jobList.forEach { job  in
+            var jobToggle = UISwitch( frame: CGRect( x: 200, y: 100 + offset, width: 100,  height: 100 ))
+            var jobButton = UIButton( type: UIButtonType.System) as UIButton
+
+            jobButton.frame = CGRectMake(100, 100 + offset, 100, 50)
+            jobButton.backgroundColor = UIColor.greenColor()
+            jobButton.setTitle( job.name, forState: UIControlState.Normal)
+            jobButton.sizeToFit()
+
+            self.view.addSubview(jobButton)
+            self.view.addSubview(jobToggle)
+
+            offset += 160
+        }
  
     }
  

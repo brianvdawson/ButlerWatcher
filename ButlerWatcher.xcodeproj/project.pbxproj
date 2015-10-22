@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D77759A1CCD2FCAC81C6E4D /* JenkinsJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D777B83347E1A715A629C2E /* JenkinsJob.swift */; };
+		3D77761ACEDB7F3208C13D6D /* JenkinsJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D777B83347E1A715A629C2E /* JenkinsJob.swift */; };
+		3D7779F680FBF4B6E4902959 /* JenkinsJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D777B83347E1A715A629C2E /* JenkinsJob.swift */; };
+		3D777B378DB6F07FF1BC4ED3 /* JenkinsJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D777B83347E1A715A629C2E /* JenkinsJob.swift */; };
 		D30EAF801BC26A7800CB8061 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30EAF7F1BC26A7800CB8061 /* AppDelegate.swift */; };
 		D30EAF821BC26A7800CB8061 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30EAF811BC26A7800CB8061 /* ViewController.swift */; };
 		D30EAF851BC26A7800CB8061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30EAF831BC26A7800CB8061 /* Main.storyboard */; };
@@ -28,6 +32,7 @@
 		D30EAFDD1BC26AD500CB8061 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30EAFDB1BC26AD500CB8061 /* WatchKit.framework */; };
 		D3BA85681BC9B45300206A81 /* README.adoc in Resources */ = {isa = PBXBuildFile; fileRef = D3BA85671BC9B45300206A81 /* README.adoc */; settings = {ASSET_TAGS = (); }; };
 		D3BA856A1BC9B6A700206A81 /* TODO.txt in Resources */ = {isa = PBXBuildFile; fileRef = D3BA85691BC9B6A700206A81 /* TODO.txt */; settings = {ASSET_TAGS = (); }; };
+		D3C982621BCF6D87002B48D4 /* JobUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C982611BCF6D87002B48D4 /* JobUtils.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +92,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D777B83347E1A715A629C2E /* JenkinsJob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JenkinsJob.swift; sourceTree = "<group>"; };
 		D30EAF7C1BC26A7800CB8061 /* ButlerWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButlerWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D30EAF7F1BC26A7800CB8061 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D30EAF811BC26A7800CB8061 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 		D30EAFE01BC26B8A00CB8061 /* ButlerWatcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ButlerWatcher.entitlements; sourceTree = "<group>"; };
 		D3BA85671BC9B45300206A81 /* README.adoc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.adoc; sourceTree = "<group>"; };
 		D3BA85691BC9B6A700206A81 /* TODO.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO.txt; sourceTree = "<group>"; };
+		D3C982611BCF6D87002B48D4 /* JobUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +164,7 @@
 		D30EAF731BC26A7800CB8061 = {
 			isa = PBXGroup;
 			children = (
+				D3C982611BCF6D87002B48D4 /* JobUtils.swift */,
 				D3BA85691BC9B6A700206A81 /* TODO.txt */,
 				D3BA85671BC9B45300206A81 /* README.adoc */,
 				D30EAFDA1BC26AD500CB8061 /* WatchConnectivity.framework */,
@@ -192,6 +200,7 @@
 				D30EAF861BC26A7800CB8061 /* Assets.xcassets */,
 				D30EAF881BC26A7800CB8061 /* LaunchScreen.storyboard */,
 				D30EAF8B1BC26A7800CB8061 /* Info.plist */,
+				3D777B83347E1A715A629C2E /* JenkinsJob.swift */,
 			);
 			path = ButlerWatcher;
 			sourceTree = "<group>";
@@ -448,7 +457,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D30EAF821BC26A7800CB8061 /* ViewController.swift in Sources */,
+				D3C982621BCF6D87002B48D4 /* JobUtils.swift in Sources */,
 				D30EAF801BC26A7800CB8061 /* AppDelegate.swift in Sources */,
+				3D7779F680FBF4B6E4902959 /* JenkinsJob.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D30EAF951BC26A7800CB8061 /* ButlerWatcherTests.swift in Sources */,
+				3D77759A1CCD2FCAC81C6E4D /* JenkinsJob.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D30EAFA01BC26A7900CB8061 /* ButlerWatcherUITests.swift in Sources */,
+				3D77761ACEDB7F3208C13D6D /* JenkinsJob.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +490,7 @@
 				D30EAFC31BC26A7900CB8061 /* ComplicationController.swift in Sources */,
 				D30EAFBB1BC26A7900CB8061 /* InterfaceController.swift in Sources */,
 				D30EAFC11BC26A7900CB8061 /* GlanceController.swift in Sources */,
+				3D777B378DB6F07FF1BC4ED3 /* JenkinsJob.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,7 +705,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.redeye.ButlerWatcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = com.redeye;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -707,7 +721,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.redeye.ButlerWatcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = com.redeye;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

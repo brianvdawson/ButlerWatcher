@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D30EAFA31BC26A7900CB8061"
-               BuildableName = "ButlerWatcher WatchKit App.app"
-               BlueprintName = "ButlerWatcher WatchKit App"
+               BlueprintIdentifier = "D30EAF7B1BC26A7800CB8061"
+               BuildableName = "ButlerWatcher.app"
+               BlueprintName = "ButlerWatcher"
                ReferencedContainer = "container:ButlerWatcher.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -79,6 +79,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D30EAF7B1BC26A7800CB8061"
+            BuildableName = "ButlerWatcher.app"
+            BlueprintName = "ButlerWatcher"
+            ReferencedContainer = "container:ButlerWatcher.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.carousel"
@@ -102,6 +111,16 @@
       </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "CODE_SIGN_IDENTITY="
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "CODE_SIGNING_REQUIRED=NO"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

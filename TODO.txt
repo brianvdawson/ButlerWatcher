@@ -8,11 +8,10 @@ Create the following functionly:
 
 
 Pre-Requisites
+- Use ASCII doc as part of process for each feature implemented.
+- Enable CI with Jenkins
 - Create TDD units tests for target functionality
 - Create TDD functional test with Cucumber
-- Enable CI with Jenkins
-- Use ASCII doc as part of process for each feature implemented.
-
 
 
 Details:
