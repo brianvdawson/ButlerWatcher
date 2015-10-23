@@ -13,8 +13,12 @@ import Foundation
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var jobList = [JenkinsJob]()
+    var jobsList: [JenkinsJob]
 
+    override init(){
+        jobsList =  [JenkinsJob]()
+        super.init()
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for custoization after application launch.
@@ -49,75 +53,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
-        
         print("Recieved Local Notification")
-        var request = NSURLRequest(URL: NSURL(string: "http://localhost:8080/api/json?pretty=true")!)
-        var session = NSURLSession.sharedSession()
+        let viewCtrl = self.window?.rootViewController
+        let jobUtils = JobUtils( jobsList: self.jobsList, url:  NSURL(string: "http://localhost:8080/api/json?pretty=true")! )
 
-
-        var task = session.dataTaskWithRequest(request){ ( data, response, error) in
-        
-            do{
-            if (error == nil){
-                print("Response: \(response)")
-                // var strData = NSString(data: data!, encoding: NSUTF8StringEncoding)
-                // print("Body: \(strData)")
-                var json: NSDictionary =  try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as! NSDictionary
-
-                print("Jobs:")
-                var jobs = json["jobs"] as? NSArray
-                for job  in jobs! {
-                    var  currentJob : JenkinsJob  = JenkinsJob(name: "")
-
-                    print(job)
-                    currentJob.name = job["name"] as! String
-
-                    print(job["color"])
-                    currentJob.status = job["color"] as! String
-
-                    print(job["url"])
-                    currentJob.url = job["url"] as! String
-
-                    currentJob.lastupdate = NSDate()
-
-                    if self.jobList.contains( currentJob){
-                        print("Job exists")
-                        var index = self.jobList.indexOf(currentJob)
-                        self.jobList[ index! ].lastupdate = NSDate()
-
-                    }else{
-                        print("New job found")
-                        self.jobList.append(currentJob)
-
-                    }
-                }
-            }else{
-                print( error )
-            }
-            }catch var serializationError as NSError{
-                print(serializationError)
-            }
-        
+        //Update Jobs
+        ///Read Jobs from host
+        jobUtils.readJobs{
+           foundJobs in
+            self.jobsList = foundJobs
+            //Create UI elements for jobs and draw
+            viewCtrl!.view = jobUtils.createJobsView(  self.jobsList, view: viewCtrl!.view! )
+            viewCtrl!.view.setNeedsDisplay()
         }
 
-        task.resume()
-        
-    
-        let okayAlertController:UIAlertController = UIAlertController(title: notification.alertAction, message: notification.alertBody, preferredStyle: .Alert)
+
+      /*  let okayAlertController:UIAldertController = UIAlertController(title: notification.alertAction, message: notification.alertBody, preferredStyle: .Alert)
         
         let alertAction: UIAlertAction = UIAlertAction(title: notification.alertAction, style: UIAlertActionStyle.Default, handler: { action in print("Click of cancel button" )
         } )
         
         okayAlertController.addAction(alertAction)
-        
-        let vController = self.window?.rootViewController
-        
-        vController?.presentViewController(okayAlertController, animated: true, completion: nil)
-        
 
-        
+        viewCtrl?.presentViewController(okayAlertController, animated: true, completion: nil)*/
     }
-
-
 }
 

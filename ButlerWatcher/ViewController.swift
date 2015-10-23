@@ -10,42 +10,42 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var button: UIButton!
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
-
-        
     }
 
     @IBAction func handleTouchUpInside(sender: UIButton) {
-                 //---- create the notification
+        //create the notification
         let notification: UILocalNotification = UILocalNotification()
-        
-                //---- set the fire date (the date time in which it will fire)
-                //notification.fireDate = NSDate(timeIntervalSinceNow: Double(60))
+        //set the fire date (the date time in which it will fire)
+        //notification.fireDate = NSDate(timeIntervalSinceNow: Double(60))
                 
-                //---- configure the alert stuff
-                notification.alertAction = "View Alert"
-                notification.alertBody = "Your 15 second alert has fired!"
-                notification.alertTitle = "Title"
-                
-                //---- modify the badge
-                notification.applicationIconBadgeNumber = 1;
-                
-                //---- set the sound to be the default sound
-                notification.soundName = UILocalNotificationDefaultSoundName
-                
-                //---- schedule it
-                UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        //---- configure the alert stuff
+        notification.alertAction = "View Alert"
+        notification.alertBody = "Your 15 second alert has fired!"
+        notification.alertTitle = "Title"
+
+        //---- modify the badge
+        notification.applicationIconBadgeNumber = 1;
+
+        //---- set the sound to be the default sound
+        notification.soundName = UILocalNotificationDefaultSoundName
+
+        //---- schedule it
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+    }
+ 
+    @IBAction func b(sender: AnyObject) {
+    }
+
+    func displayJobs(){
         var jobButtons = [UIButton]()
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
 
         var offset = CGFloat(0)
-        appDelegate.jobList.forEach { job  in
+        appDelegate.jobsList.forEach { job  in
             var jobToggle = UISwitch( frame: CGRect( x: 200, y: 100 + offset, width: 100,  height: 100 ))
             var jobButton = UIButton( type: UIButtonType.System) as UIButton
 
@@ -56,13 +56,10 @@ class ViewController: UIViewController {
 
             self.view.addSubview(jobButton)
             self.view.addSubview(jobToggle)
-
             offset += 160
+
+            self.view.setNeedsDisplay()
         }
- 
-    }
- 
-    @IBAction func b(sender: AnyObject) {
     }
     
     override func didReceiveMemoryWarning() {
