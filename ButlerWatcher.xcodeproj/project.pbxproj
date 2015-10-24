@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14BB3A0B1BDB42BA00469434 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14BB3A0A1BDB42BA00469434 /* Settings.bundle */; settings = {ASSET_TAGS = (); }; };
+		14BB3A0D1BDB47E000469434 /* Settings-Watch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14BB3A0C1BDB47E000469434 /* Settings-Watch.bundle */; settings = {ASSET_TAGS = (); }; };
 		3D77759A1CCD2FCAC81C6E4D /* JenkinsJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D777B83347E1A715A629C2E /* JenkinsJob.swift */; };
 		3D77761ACEDB7F3208C13D6D /* JenkinsJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D777B83347E1A715A629C2E /* JenkinsJob.swift */; };
 		3D7779F680FBF4B6E4902959 /* JenkinsJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D777B83347E1A715A629C2E /* JenkinsJob.swift */; };
@@ -92,6 +94,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		14BB3A0A1BDB42BA00469434 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		14BB3A0C1BDB47E000469434 /* Settings-Watch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "Settings-Watch.bundle"; path = "../Settings-Watch.bundle"; sourceTree = "<group>"; };
 		3D777B83347E1A715A629C2E /* JenkinsJob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JenkinsJob.swift; sourceTree = "<group>"; };
 		D30EAF7C1BC26A7800CB8061 /* ButlerWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButlerWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D30EAF7F1BC26A7800CB8061 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 		D30EAF731BC26A7800CB8061 = {
 			isa = PBXGroup;
 			children = (
+				14BB3A0A1BDB42BA00469434 /* Settings.bundle */,
 				D3C982611BCF6D87002B48D4 /* JobUtils.swift */,
 				D3BA85691BC9B6A700206A81 /* TODO.txt */,
 				D3BA85671BC9B45300206A81 /* README.adoc */,
@@ -226,6 +231,7 @@
 		D30EAFA81BC26A7900CB8061 /* ButlerWatcher WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				14BB3A0C1BDB47E000469434 /* Settings-Watch.bundle */,
 				D30EAFA91BC26A7900CB8061 /* Interface.storyboard */,
 				D30EAFAC1BC26A7900CB8061 /* Assets.xcassets */,
 				D30EAFAE1BC26A7900CB8061 /* Info.plist */,
@@ -411,9 +417,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3BA856A1BC9B6A700206A81 /* TODO.txt in Resources */,
+				14BB3A0D1BDB47E000469434 /* Settings-Watch.bundle in Resources */,
 				D3BA85681BC9B45300206A81 /* README.adoc in Resources */,
 				D30EAF8A1BC26A7800CB8061 /* LaunchScreen.storyboard in Resources */,
 				D30EAF871BC26A7800CB8061 /* Assets.xcassets in Resources */,
+				14BB3A0B1BDB42BA00469434 /* Settings.bundle in Resources */,
 				D30EAF851BC26A7800CB8061 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
