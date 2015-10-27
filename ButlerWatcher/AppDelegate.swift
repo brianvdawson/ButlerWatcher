@@ -14,9 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var jobsList: [JenkinsJob]
+    var hostURL: NSURL
 
     override init(){
         jobsList =  [JenkinsJob]()
+        hostURL = NSURL( string: "")!
         super.init()
     }
 
@@ -27,6 +29,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 forTypes: [.Alert, .Badge, .Sound],
                 categories: nil))
         
+        
+        //let defaults = NSUserDefaults.standardUserDefaults()
+        let urlPref = NSUserDefaults.standardUserDefaults().valueForKey("jenkins_url") as? String
+        if urlPref == nil{
+            print("Preferences are empty")
+        }else{
+            self.hostURL = NSURL( string: urlPref! )!
+        }
         return true
     }
 
@@ -55,8 +65,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
         print("Recieved Local Notification")
         let viewCtrl = self.window?.rootViewController
-        let jobUtils = JobUtils( jobsList: self.jobsList, url:  NSURL(string: "http://localhost:8080/api/json?pretty=true")! )
-
+        let jobUtils = JobUtils( jobsList: self.jobsList, url:  hostURL )
+        
         //Update Jobs
         ///Read Jobs from host
         jobUtils.readJobs{

@@ -32,8 +32,26 @@
             <objects>
                 <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="ButlerWatcher_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group alignment="left" id="t8f-Gd-c4y"/>
-                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                        <group alignment="left" id="t8f-Gd-c4y" userLabel="Test">
+                            <attributedString key="userComments">
+                                <fragment content="Test">
+                                    <attributes>
+                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </group>
+                        <group alignment="left" id="uCw-4Q-Ouw" userLabel="test">
+                            <attributedString key="userComments">
+                                <fragment content="ter">
+                                    <attributes>
+                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </group>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
                 </glanceController>

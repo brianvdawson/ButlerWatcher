@@ -12,6 +12,12 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        
+    
+        let defaults = NSUserDefaults.standardUserDefaults()//s(suiteName: "group.com.redeye.ButlerWatcher")
+        print(defaults.dictionaryRepresentation())
+        print( defaults.stringForKey( "jenkins_url" ) )
+
     }
 
     func applicationDidBecomeActive() {

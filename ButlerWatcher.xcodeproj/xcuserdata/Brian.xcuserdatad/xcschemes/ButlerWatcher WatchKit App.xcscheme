@@ -82,9 +82,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D30EAF7B1BC26A7800CB8061"
-            BuildableName = "ButlerWatcher.app"
-            BlueprintName = "ButlerWatcher"
+            BlueprintIdentifier = "D30EAFA31BC26A7900CB8061"
+            BuildableName = "ButlerWatcher WatchKit App.app"
+            BlueprintName = "ButlerWatcher WatchKit App"
             ReferencedContainer = "container:ButlerWatcher.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
